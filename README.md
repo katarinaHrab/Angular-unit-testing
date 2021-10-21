@@ -21,6 +21,7 @@ https://dev.to/mustapha/angular-unit-testing-101-with-examples-6mc
 1. Vytvorte test pre AppComponentu, ktory bude testovat, ze sa na stranke zobrazi napis "Tour of Heroes" ulozeny v title komponenty
 
 2. Vytvorte test pre AppComponentu, ktory bude testovat, ze sa na stranke zobrazia 2 tlacitka/linky, ktore smeruju na Dashboard a Heroes
+*hint (skontrolovanie ci odkaz smeruje na dashboard): expect(fixture.nativeElement.querySelectorAll('a')[0].getAttribute('routerlink')).toEqual('/dashboard');*
 
 
 ### MessagesComponent testy
